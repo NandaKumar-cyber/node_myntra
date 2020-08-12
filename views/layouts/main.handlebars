@@ -1,0 +1,39 @@
+<!----Master handlebars file--->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Site - Shop Online for Men, Women &amp; Kids Fashion | Myntra</title>
+    <link rel="stylesheet" href="../../bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/myntra.css">
+</head>
+
+<body>
+    
+<section id="headerBlock">
+    <article>
+        {{>_navbar}}
+    </article>
+</section>
+
+<aside>{{>_msg}}</aside>
+   
+<section id="bodyBlock">
+    <article>
+        {{>_bodysection}}
+    </article>
+</section>
+
+<div class="conatiner">
+{{{body}}}
+</div>
+
+    <script src="../../jquery/dist/jquery.min.js"></script>
+    <script src="../../popper.js/dist/popper.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../../js/client.js"></script>
+</body>
+</html>
